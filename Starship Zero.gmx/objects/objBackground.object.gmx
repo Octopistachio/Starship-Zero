@@ -32,6 +32,14 @@ starPointy = random(room_height); //Where on the screen the stars spawn relative
 starMax = 200; //Max amount of stars appearing on screen
 starSpeedMax = .5; //Max speed the stars will travel
 starSpeed = random(starSpeedMax); //Randomly generated speed value
+
+/*Spawn stars when the game starts*/
+for(starSpawnCount = 0; starSpawnCount &lt; starMax; starSpawnCount++){
+    
+    starSpeed = random(starSpeedMax);
+    starInstance = instance_create(random(room_width),random(room_height), objStar);
+
+}
 </string>
           </argument>
         </arguments>
