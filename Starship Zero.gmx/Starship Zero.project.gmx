@@ -33,9 +33,7 @@
     <sprite>sprites\sprResearch</sprite>
   </sprites>
   <backgrounds name="background"/>
-  <paths name="paths">
-    <path>paths\path0</path>
-  </paths>
+  <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\ScreenBullshit.gml</script>
     <script>scripts\Exit.gml</script>

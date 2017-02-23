@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>starSpawnTimer = 1;
-alarm[0] = starSpawnTimer+100;
-starPointx = room_width;
-starPointy = random(room_height);
-starMax = 150;
-starSpeedMax = .75;
-starSpeed = random(starSpeedMax);
+            <string>starSpawnTimer = 1; //Time between star spawns
+alarm[0] = starSpawnTimer; //Set the alarm equal to the timer
+starPointx = room_width; //Where on the screen the stars spawn relative to x
+starPointy = random(room_height); //Where on the screen the stars spawn relative to y
+starMax = 200; //Max amount of stars appearing on screen
+starSpeedMax = .5; //Max speed the stars will travel
+starSpeed = random(starSpeedMax); //Randomly generated speed value
 </string>
           </argument>
         </arguments>
@@ -82,22 +82,18 @@ if instance_number(objStar) &lt; starMax{
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>starPointy = random(room_height);
-starSpeed = random(starSpeedMax);
+            <string>starPointy = random(room_height); //Generate a place on the screen for the star to spawn relative to y
+starSpeed = random(starSpeedMax); //Generate a speed
 
-for (starId = 0; starId &lt; instance_count; starId += 1;)
+for (starId = 0; starId &lt; instance_count; starId += 1;) //Loop through each spawned star
     {
-    if(instance_exists(instance_find(objStar,starId))){
-        with (instance_find(objStar,starId)){
+    if(instance_exists(instance_find(objStar,starId))){ //With the STAR object
+        with (instance_find(objStar,starId)){ //Pick a star
             
-            x -= thisStarSpeed;
-            if(x&lt;-sprite_get_width(sprStar)){
-                instance_destroy();
+            move_towards_point( -sprite_get_width(sprStar), y, speed); //Travel towards the left of the screen
+            if(x&lt;-sprite_get_width(sprStar)){ //If the star is off the screen
+                instance_destroy(); //Destroy it
             }
-            
-            image_xscale = thisStarSpeed;
-            image_yscale = image_xscale;
-            depth = 999; 
             
             
         }
