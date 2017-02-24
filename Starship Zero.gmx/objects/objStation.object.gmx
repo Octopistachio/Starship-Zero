@@ -31,21 +31,27 @@ draw_self(); //Draw the station sprite
 
 /*Text properties*/
 fontScale = .25;
-yOfTextRelativeToStation = 10
-xOfTextRelativeToStation = -3
+yOfTextRelativeToStation = 12
+xOfTextRelativeToStation = -5
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(fntSilkscreen);
-currentColour = c_white;
 
-/*for(currentStationCounter=0;currentStationCounter&lt;array_height_2d(global.station);currentStationCounter++){
-    draw_set_colour(currentColour);
-    textAboveStation = draw_text_transformed(global.station[currentStationCounter,0].x-xOfTextRelativeToStation,global.station[currentStationCounter,0].y-yOfTextRelativeToStation,global.station[currentStationCounter,1],fontScale,fontScale,0);
+stationName = string_delete(object_get_name(self.id-100000+1),1,3);
+
+/*Change Text Colour*/
+
+//Station Colour Changer
+for(currentStationCounter = 0;currentStationCounter&lt;array_height_2d(global.station);currentStationCounter++){
+    ChangeTextColour(currentStationCounter);
     
-}*/
+}
+
+draw_set_colour(self.currentColour);
+
 
 for(currentStationCounter=0;currentStationCounter&lt;array_height_2d(global.station);currentStationCounter++){
-    textAboveStation = draw_text_transformed(x-xOfTextRelativeToStation,y-yOfTextRelativeToStation,string(object_get_name(self)),fontScale,fontScale,0);
+    textAboveStation = draw_text_transformed(x-xOfTextRelativeToStation,y-yOfTextRelativeToStation,stationName,fontScale,fontScale,0);
 }
 </string>
           </argument>

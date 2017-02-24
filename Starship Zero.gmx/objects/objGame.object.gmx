@@ -76,13 +76,13 @@ playerTurnCounter = -1; //The counter that chooses whose turn it is
 playerTurnNameDisplayCounter = 0; //The name that displays at the top
 
 /*The station the player has selected*/
-redStation = null;
-yellowStation = null;
-blueStation = null;
-greenStation = null;
+redStation = noone;
+yellowStation = noone;
+blueStation = noone;
+greenStation = noone;
 
 selected = false; //A station has been selected. This variable stops the selector from moving while the player's sprite is moving
-
+stationHasBeenChosen = false; //When a station was picked, this changes to true
 
 </string>
           </argument>
@@ -128,7 +128,7 @@ selected = false; //A station has been selected. This variable stops the selecto
         }
         
         instance_create(global.station[selectedStationCounter,0].x, global.station[selectedStationCounter,0].y, objSelector); //Then create a selector
-        
+
         with(objSelector){
             image_blend = make_colour_rgb(255, 255, 0);
         }
@@ -164,17 +164,17 @@ selected = false; //A station has been selected. This variable stops the selecto
     /* Press E */
     if keyboard_check_pressed(ord('E')){ //If E is press, select the current station
     
-        /*FIX THIS CODE, IT BREAKS THE GAME*/
-        if(objSelector.x == redStation.x || objSelector.x == yellowStation.x ||
-           objSelector.x == greenStation.x || objSelector.x == blueStation.x){
-                
-           /*with(objSelector)
-                image_blend = make_colour_hsv(0, 0, 0);*/
-           objStation.currentColour = c_black; //if station is taken, make the selector black
+        if(global.station[selectedStationCounter,0] == redStation || global.station[selectedStationCounter,0] == yellowStation ||
+           global.station[selectedStationCounter,0] == greenStation || global.station[selectedStationCounter,0] == blueStation){
+           
+           stationHasBeenChosen = true;
+           with(objSelector)
+                image_blend = make_colour_hsv(0, 0, 0);
             
         }
         else{
     
+            stationHasBeenChosen = false;
             selected = true;
         
             with(objSelector){

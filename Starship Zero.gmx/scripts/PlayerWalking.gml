@@ -52,11 +52,7 @@ if(global.walking){ //If player is walking
     }
     else if(global.player[playerTurnCounter,1].x == global.station[selectedStationCounter,0].x - 8 && sameLevel == true){
         global.walking = false; //When player hits the station, stop
-        selected = false; //Allow the next player to pick a station
-        with(objSelector){
-            image_blend = make_colour_rgb(255, 255, 0); //Colour the selector yellow
-        }
-        
+        selected = false; //Allow the next player to pick a station        
     }
 
 }
