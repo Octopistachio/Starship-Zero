@@ -38,6 +38,7 @@
     <script>scripts\ScreenBullshit.gml</script>
     <script>scripts\Exit.gml</script>
     <script>scripts\PlayerWalking.gml</script>
+    <script>scripts\ChangeTextColour.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntSilkscreen</font>

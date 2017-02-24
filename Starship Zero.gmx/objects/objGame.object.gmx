@@ -83,7 +83,6 @@ greenStation = null;
 
 selected = false; //A station has been selected. This variable stops the selector from moving while the player's sprite is moving
 
-
 </string>
           </argument>
         </arguments>
@@ -168,9 +167,8 @@ selected = false; //A station has been selected. This variable stops the selecto
         if(objSelector.x == redStation.x || objSelector.x == yellowStation.x ||
            objSelector.x == greenStation.x || objSelector.x == blueStation.x){
                 
-           /*with(objSelector)
-                image_blend = make_colour_hsv(0, 0, 0);*/
-           objStation.currentColour = c_black; //if station is taken, make the selector black
+           with(objSelector)
+                image_blend = make_colour_hsv(0, 0, 0);
             
         }
         else{
