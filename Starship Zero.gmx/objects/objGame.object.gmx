@@ -54,10 +54,6 @@ global.station[7,1] = "Engineering";
 
 instance_create(global.station[selectedStationCounter,0].x, global.station[selectedStationCounter,0].y, objSelector);
 
-with(objSelector){
-    image_blend = make_colour_rgb(255, 255, 0);
-}
-
 /*Array of all the players*/
 //Names of the players
 global.player[0,0] = "Red";
@@ -129,10 +125,6 @@ global.sameLevel = true;
         }
         
         instance_create(global.station[selectedStationCounter,0].x, global.station[selectedStationCounter,0].y, objSelector); //Then create a selector
-
-        with(objSelector){
-            image_blend = make_colour_rgb(255, 255, 0);
-        }
         
     }
     
@@ -192,8 +184,9 @@ global.sameLevel = true;
                 }
             else{
             /*This should actually end the round. For now, this is filler*/
-                playerTurnCounter=0;
-                playerTurnNameDisplayCounter=0;
+                room_goto(roomText);
+                //playerTurnCounter=0;
+                //playerTurnNameDisplayCounter=0;
             }
                         
             /* Set the player's current station to the station that is selected */
@@ -212,10 +205,6 @@ global.sameLevel = true;
 }
 
 PlayerWalking(); //Code that moves the player
-
-
-
-
 </string>
           </argument>
         </arguments>

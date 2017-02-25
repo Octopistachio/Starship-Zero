@@ -15,6 +15,7 @@ if(global.walking){ //If player is walking
                     image_xscale = 1;
                     
             }
+                        
         }
         else{ //If player's X is equal to the X of the door
         
@@ -27,7 +28,8 @@ if(global.walking){ //If player is walking
                 global.walking = false; 
         
         }
-          
+         
+        
     
     
     }
