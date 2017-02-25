@@ -54,8 +54,8 @@
     <instance objName="objShip" x="128" y="120" name="inst_501C5310" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBed" x="112" y="120" name="inst_C3E76469" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBed" x="136" y="120" name="inst_F0C5643D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBed" x="160" y="120" name="inst_D528054B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="objBed" x="184" y="120" name="inst_106A7986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBed" x="184" y="120" name="inst_D528054B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objBed" x="160" y="120" name="inst_106A7986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objWeapons" x="80" y="88" name="inst_35092B62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objShields" x="112" y="88" name="inst_FB92159C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objCommunications" x="144" y="88" name="inst_F94DD4D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,6 +74,13 @@
     <instance objName="objDoor" x="48" y="120" name="inst_8457D608" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDoor" x="48" y="152" name="inst_61B38612" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBackground" x="32" y="0" name="inst_766F964B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objTurret" x="176" y="160" name="inst_278657EC" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objEngine" x="16" y="88" name="inst_C55B3DFE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEngine" x="16" y="120" name="inst_9CCA1E0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEngine" x="16" y="152" name="inst_9A59D33A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objFire" x="16" y="88" name="inst_8C5FE4ED" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
+    <instance objName="objFire" x="16" y="120" name="inst_CB31575C" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
+    <instance objName="objFire" x="16" y="152" name="inst_50179976" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

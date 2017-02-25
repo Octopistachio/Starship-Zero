@@ -84,6 +84,7 @@ greenStation = noone;
 selected = false; //A station has been selected. This variable stops the selector from moving while the player's sprite is moving
 stationHasBeenChosen = false; //When a station was picked, this changes to true
 
+global.sameLevel = true;
 </string>
           </argument>
         </arguments>

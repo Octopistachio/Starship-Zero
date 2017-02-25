@@ -22,15 +22,25 @@
       <sprite>sprites\sprGreen</sprite>
       <sprite>sprites\sprGreenWalking</sprite>
     </sprites>
-    <sprite>sprites\sprStation</sprite>
-    <sprite>sprites\sprSelector</sprite>
-    <sprite>sprites\sprDoor</sprite>
-    <sprite>sprites\sprBed</sprite>
-    <sprite>sprites\sprShip</sprite>
+    <sprites name="Ship">
+      <sprites name="Interior">
+        <sprites name="Stations">
+          <sprite>sprites\sprStation</sprite>
+          <sprite>sprites\sprJanitor</sprite>
+          <sprite>sprites\sprResearch</sprite>
+          <sprite>sprites\sprEngineering</sprite>
+        </sprites>
+        <sprite>sprites\sprDoor</sprite>
+        <sprite>sprites\sprBed</sprite>
+      </sprites>
+      <sprites name="Exterior">
+        <sprite>sprites\sprShip</sprite>
+        <sprite>sprites\sprTurret</sprite>
+        <sprite>sprites\sprEngine</sprite>
+        <sprite>sprites\sprFire</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\sprStar</sprite>
-    <sprite>sprites\sprJanitor</sprite>
-    <sprite>sprites\sprEngineering</sprite>
-    <sprite>sprites\sprResearch</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -70,10 +80,13 @@
     <object>objects\objDoor</object>
     <object>objects\objBed</object>
     <object>objects\objShip</object>
+    <object>objects\objEngine</object>
     <object>objects\objStar</object>
+    <object>objects\objTurret</object>
+    <object>objects\objFire</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
+    <room>rooms\roomSpace</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
