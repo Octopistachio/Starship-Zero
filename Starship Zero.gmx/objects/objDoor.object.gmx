@@ -54,7 +54,7 @@
 
 if(global.walking &amp;&amp; global.sameLevel){ //If the player is walking and they are on the same level as the station
     if(image_index&gt;0){ //Close the doors
-        image_index--;
+        image_index=0;
     }
 }  
 
