@@ -35,40 +35,7 @@ boxOutlineWidth = 2; //Weight of the outline
 
 textMargin = 4; //How far away the text is from the side of the box
 textColour = c_white; //The colour of the text
-fontScale = .5; //Scaling of the textbox font
-
-characterDrawDelay = 3; //Delay between each character of the string
-chars_drawn=1;//put this to 0 if you want to draw the first character in the for loop
-alarm[0]=characterDrawDelay;//any value here this is the delay between each character drawn;
-
-text = "This sentence is a test to see if I can put words on different lines."; //Text written to the textbox
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>chars_drawn++;
-if chars_drawn!=len{
-    alarm[0]=characterDrawDelay;
-    audio_play_sound(audCharacter,1,0);
-}
+text = "Hello world!"; //Text written to the textbox
 </string>
           </argument>
         </arguments>
@@ -95,10 +62,8 @@ if chars_drawn!=len{
 draw_rectangle_colour(boxMargin+boxOutlineWidth,room_height-boxMargin-boxOutlineWidth,room_width-boxMargin-boxOutlineWidth,room_height-boxHeight+boxOutlineWidth,boxFillColour,boxFillColour,boxFillColour,boxFillColour,false); //The text box fill
 
 draw_set_colour(textColour);
-draw_set_font(fntTextBox);
-
-TextDisplay(text,boxMargin+boxOutlineWidth+textMargin,room_height-boxHeight+boxOutlineWidth+textMargin);
-//draw_text_transformed(boxMargin+boxOutlineWidth+textMargin,room_height-boxHeight+boxOutlineWidth+textMargin,text,fontScale,fontScale,0);
+draw_set_font(fntSilkscreen);
+draw_text(boxMargin+boxOutlineWidth+textMargin,room_height-boxHeight+boxOutlineWidth+textMargin,text);
 </string>
           </argument>
         </arguments>
