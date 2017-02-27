@@ -4,6 +4,8 @@ if(global.walking){ //If player is walking
     if((global.player[playerTurnCounter,1].y) != global.station[selectedStationCounter,0].y){ //If player is on a different level than the station
     
          global.sameLevel = false; //The player and the station are NOT on the same level of the ship
+         global.didLevelChange = true; //checks if the floor was changed
+         global.didDoorsClose = 0; //checks if doors already closed and how far
     
         if(global.player[playerTurnCounter,1].x < objDoor.x) //If player's X is less than the X of the door
             global.player[playerTurnCounter,1].x++; //Walk forwards
@@ -54,7 +56,8 @@ if(global.walking){ //If player is walking
     }
     else if(global.player[playerTurnCounter,1].x == global.station[selectedStationCounter,0].x - 8 && global.sameLevel == true){
         global.walking = false; //When player hits the station, stop
-        selected = false; //Allow the next player to pick a station        
+        selected = false; //Allow the next player to pick a station   
+        global.didLevelChange = false;     
     }
 
 }
