@@ -81,6 +81,7 @@
     <instance objName="objFire" x="16" y="88" name="inst_8C5FE4ED" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
     <instance objName="objFire" x="16" y="120" name="inst_CB31575C" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
     <instance objName="objFire" x="16" y="152" name="inst_50179976" locked="0" code="" scaleX="2.25" scaleY="2.59999990463257" colour="4294967295" rotation="0"/>
+    <instance objName="objOptions" x="48" y="0" name="inst_FB6F7F89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

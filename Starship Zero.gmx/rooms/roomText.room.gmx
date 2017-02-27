@@ -54,6 +54,7 @@
     <instance objName="objDev" x="0" y="0" name="inst_EF6E6971" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objTextGame" x="16" y="0" name="inst_7E7735FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objBackground" x="32" y="0" name="inst_0952E677" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objOptions" x="48" y="0" name="inst_43A992E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
