@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>ScreenBullshit(); //Run the game in fullscreen
 
+audio_play_sound(audSong,1,1);
+
 fontScale = 10; //Set the font size for the Game Object
 
 selectedStationCounter = 0;

@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\audCharacter</sound>
+    <sound>sound\audSong</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Red">
       <sprite>sprites\sprRed</sprite>
@@ -49,10 +52,12 @@
     <script>scripts\Exit.gml</script>
     <script>scripts\PlayerWalking.gml</script>
     <script>scripts\ChangeTextColour.gml</script>
+    <script>scripts\TextDisplay.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntSilkscreen</font>
     <font>fonts\fntTitle</font>
+    <font>fonts\fntTextBox</font>
   </fonts>
   <objects name="objects">
     <objects name="Players">
@@ -62,34 +67,39 @@
       <object>objects\objBlue</object>
       <object>objects\objGreen</object>
     </objects>
-    <objects name="Stations">
-      <object>objects\objStation</object>
-      <object>objects\objWeapons</object>
-      <object>objects\objShields</object>
-      <object>objects\objCommunications</object>
-      <object>objects\objNavigation</object>
-      <object>objects\objEngineering</object>
-      <object>objects\objResearch</object>
-      <object>objects\objJanitor</object>
-      <object>objects\objPiloting</object>
+    <objects name="Ship">
+      <objects name="Interior">
+        <object>objects\objBed</object>
+        <object>objects\objDoor</object>
+        <objects name="Stations">
+          <object>objects\objStation</object>
+          <object>objects\objWeapons</object>
+          <object>objects\objShields</object>
+          <object>objects\objCommunications</object>
+          <object>objects\objNavigation</object>
+          <object>objects\objEngineering</object>
+          <object>objects\objResearch</object>
+          <object>objects\objJanitor</object>
+          <object>objects\objPiloting</object>
+        </objects>
+      </objects>
+      <objects name="Exterior">
+        <object>objects\objEngine</object>
+        <object>objects\objFire</object>
+        <object>objects\objShip</object>
+        <object>objects\objTurret</object>
+      </objects>
     </objects>
     <object>objects\objGame</object>
     <object>objects\objBackground</object>
     <object>objects\objSelector</object>
     <object>objects\objDev</object>
     <object>objects\objTextGame</object>
-    <object>objects\objDoor</object>
-    <object>objects\objBed</object>
-    <object>objects\objShip</object>
-    <object>objects\objEngine</object>
     <object>objects\objStar</object>
-    <object>objects\objTurret</object>
-    <object>objects\objFire</object>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\roomText</room>
     <room>rooms\roomSpace</room>
+    <room>rooms\roomText</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
