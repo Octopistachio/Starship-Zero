@@ -98,8 +98,8 @@
     <object>objects\objStar</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomSpace</room>
     <room>rooms\roomText</room>
+    <room>rooms\roomSpace</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

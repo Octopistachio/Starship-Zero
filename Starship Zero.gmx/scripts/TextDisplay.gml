@@ -14,14 +14,16 @@ cur_width+=string_width(chars[0]);//add the first character's width to the total
 for (j=1;j< chars_drawn;j++)
     {
         
-        if (chars[j]=='#')
+        if (cur_width>=room_width - boxMargin - boxOutlineWidth - textMargin)
         {
+            if(chars[j]==' ')
+                chars[j]='#'
             line+=string_height(chars[j-1]);
             cur_width=0;
         }
         else
         {
-        draw_text(xpos+cur_width,ypos+line,chars[j]);
-        cur_width+=string_width(chars[j]);
+            draw_text(xpos+cur_width,ypos+line,chars[j]);
+            cur_width+=string_width(chars[j]);
         }
     }//the loop that actually draws the characters
