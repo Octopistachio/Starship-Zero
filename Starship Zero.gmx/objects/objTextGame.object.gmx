@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScreenBullshit(); //Run the game in fullscreen
+            <string>/* ------------ PRESET STATIONS FOR TESTING PURPOSES ------------*/
+
+global.redStation = objEngineering;
+global.yellowStation = objWeapons;
+global.blueStation = objShields;
+global.greenStation = objPiloting;
+
+/* ------------------------------------------------------------- */
+
+ScreenBullshit(); //Run the game in fullscreen
 
 boxMargin = 8; //Amount of pixels the text box is from the screen on the bottom, left, and right
 boxHeight = 64*3/2 //How high the box is

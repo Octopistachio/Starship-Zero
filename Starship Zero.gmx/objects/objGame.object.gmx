@@ -74,10 +74,10 @@ playerTurnCounter = -1; //The counter that chooses whose turn it is
 playerTurnNameDisplayCounter = 0; //The name that displays at the top
 
 /*The station the player has selected*/
-redStation = noone;
-yellowStation = noone;
-blueStation = noone;
-greenStation = noone;
+global.redStation = noone;
+global.yellowStation = noone;
+global.blueStation = noone;
+global.greenStation = noone;
 
 selected = false; //A station has been selected. This variable stops the selector from moving while the player's sprite is moving
 stationHasBeenChosen = false; //When a station was picked, this changes to true
@@ -159,8 +159,8 @@ global.sameLevel = true;
     /* Press E */
     if keyboard_check_pressed(ord('E')){ //If E is press, select the current station
     
-        if(global.station[selectedStationCounter,0] == redStation || global.station[selectedStationCounter,0] == yellowStation ||
-           global.station[selectedStationCounter,0] == greenStation || global.station[selectedStationCounter,0] == blueStation){
+        if(global.station[selectedStationCounter,0] == global.redStation || global.station[selectedStationCounter,0] == global.yellowStation ||
+           global.station[selectedStationCounter,0] == global.greenStation || global.station[selectedStationCounter,0] == global.blueStation){
            
            stationHasBeenChosen = true;
            with(objSelector)
@@ -193,10 +193,10 @@ global.sameLevel = true;
                         
             /* Set the player's current station to the station that is selected */
             switch(playerTurnCounter){ 
-                case 0: redStation = global.station[selectedStationCounter,0]; break; 
-                case 1: yellowStation = global.station[selectedStationCounter,0]; break;
-                case 2: blueStation = global.station[selectedStationCounter,0]; break;
-                case 3: greenStation = global.station[selectedStationCounter,0]; break;
+                case 0: global.redStation = global.station[selectedStationCounter,0]; break; 
+                case 1: global.yellowStation = global.station[selectedStationCounter,0]; break;
+                case 2: global.blueStation = global.station[selectedStationCounter,0]; break;
+                case 3: global.greenStation = global.station[selectedStationCounter,0]; break;
             }
             
             
