@@ -67,7 +67,7 @@ text = "This sentence is a test to see if I can put words on different lines."; 
             <string>chars_drawn++;
 if chars_drawn!=len{
     alarm[0]=characterDrawDelay;
-    audio_play_sound(audCharacter,1,0);
+    PlaySound(audCharacter,false);
 }
 </string>
           </argument>

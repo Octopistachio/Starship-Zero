@@ -53,6 +53,7 @@
     <script>scripts\PlayerWalking.gml</script>
     <script>scripts\ChangeTextColour.gml</script>
     <script>scripts\TextDisplay.gml</script>
+    <script>scripts\PlaySound.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fntSilkscreen</font>
@@ -96,6 +97,7 @@
     <object>objects\objDev</object>
     <object>objects\objTextGame</object>
     <object>objects\objStar</object>
+    <object>objects\objOptions</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\roomText</room>
