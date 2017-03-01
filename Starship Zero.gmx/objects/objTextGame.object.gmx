@@ -25,7 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScreenBullshit(); //Run the game in fullscreen
+            <string>/* ------------ PRESET STATIONS FOR TESTING PURPOSES ------------*/
+
+global.redStation = objEngineering;
+global.yellowStation = objWeapons;
+global.blueStation = objShields;
+global.greenStation = objPiloting;
+
+/* ------------------------------------------------------------- */
+
+ScreenBullshit(); //Run the game in fullscreen
 
 boxMargin = 8; //Amount of pixels the text box is from the screen on the bottom, left, and right
 boxHeight = 64*3/2 //How high the box is
@@ -37,11 +46,11 @@ textMargin = 4; //How far away the text is from the side of the box
 textColour = c_white; //The colour of the text
 fontScale = .5; //Scaling of the textbox font
 
-characterDrawDelay = 3; //Delay between each character of the string
+characterDrawDelay = 2; //Delay between each character of the string
 chars_drawn=1;//put this to 0 if you want to draw the first character in the for loop
 alarm[0]=characterDrawDelay;//any value here this is the delay between each character drawn;
 
-text = "This sentence is a test to see if I can put words on different lines."; //Text written to the textbox
+text = "How can my screen hesitate? An anniversary crowd antiques fuck. The soundtrack disables this wealthy major outside the tutor. The eighth tail marries the cyclist opposite the handful."; //Text written to the textbox
 </string>
           </argument>
         </arguments>
@@ -65,9 +74,9 @@ text = "This sentence is a test to see if I can put words on different lines."; 
           <argument>
             <kind>1</kind>
             <string>chars_drawn++;
+PlaySound(audCharacter,false);
 if chars_drawn!=len{
     alarm[0]=characterDrawDelay;
-    audio_play_sound(audCharacter,1,0);
 }
 </string>
           </argument>
