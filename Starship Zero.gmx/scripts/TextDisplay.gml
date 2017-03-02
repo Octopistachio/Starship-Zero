@@ -14,7 +14,7 @@ cur_width+=string_width(chars[0]);//add the first character's width to the total
 for (j=1;j< chars_drawn;j++) //For each character
     {
         
-        if (cur_width>=room_width - boxMargin - boxOutlineWidth - textMargin-30) //If the text in the box is longer than the box
+        if (cur_width>=room_width - boxMargin - boxOutlineWidth - textMargin*8) //If the text in the box is longer than the box
         {
             //Put it on a new line
             if(chars[j]!=" "){ //If the character going to the new line is not a space
