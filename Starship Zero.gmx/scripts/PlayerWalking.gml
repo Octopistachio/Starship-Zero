@@ -1,4 +1,5 @@
 walkSpeed = 4;
+distanceFromStation = 40;
 
 if(global.walking){ //If player is walking
 
@@ -42,21 +43,21 @@ if(global.walking){ //If player is walking
     
 
     /*Walk to Station*/
-    if(global.player[playerTurnCounter,1].x != global.station[selectedStationCounter,0].x - 8 && global.sameLevel == true){ //If player's X is not equal to the station's X
+    if(global.player[playerTurnCounter,1].x != global.station[selectedStationCounter,0].x - distanceFromStation && global.sameLevel == true){ //If player's X is not equal to the station's X
         
-        if(global.player[playerTurnCounter,1].x < global.station[selectedStationCounter,0].x - 8) //If player's X is less than the X of the station
+        if(global.player[playerTurnCounter,1].x < global.station[selectedStationCounter,0].x - distanceFromStation) //If player's X is less than the X of the station
             global.player[playerTurnCounter,1].x += walkSpeed; //Walk forwards
         else{ //If player's X is greater than the X of the station
             global.player[playerTurnCounter,1].x -= walkSpeed; //Walk backwards
             with(global.player[playerTurnCounter,1]){
                 image_xscale = -4;
-                if(x == global.station[objGame.selectedStationCounter,0].x - 8) //Flip player when he is walking backwards
+                if(x == global.station[objGame.selectedStationCounter,0].x - distanceFromStation) //Flip player when he is walking backwards
                     image_xscale = 4;
                     
             }
         }
     }
-    else if(global.player[playerTurnCounter,1].x == global.station[selectedStationCounter,0].x - 8 && global.sameLevel == true){
+    else if(global.player[playerTurnCounter,1].x == global.station[selectedStationCounter,0].x - distanceFromStation && global.sameLevel == true){
         global.walking = false; //When player hits the station, stop
         selected = false; //Allow the next player to pick a station   
         global.didLevelChange = false;     

@@ -12,8 +12,7 @@ var i,j;//you know what these are :P
 draw_text(xpos,ypos,chars[0]);//draw the first character,PS:you can remove this and put it in the next for loop but u need to put chars_drawn to 0 in the create event
 cur_width+=string_width(chars[0]);//add the first character's width to the total width
 for (j=1;j< chars_drawn;j++) //For each character
-    {
-        
+    {   
         if (cur_width>=room_width - boxMargin - boxOutlineWidth - textMargin*8) //If the text in the box is longer than the box
         {
             //Put it on a new line

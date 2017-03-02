@@ -100,8 +100,8 @@
     <object>objects\objOptions</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomText</room>
     <room>rooms\roomSpace</room>
+    <room>rooms\roomText</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
