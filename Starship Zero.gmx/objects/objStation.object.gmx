@@ -30,8 +30,8 @@
 draw_self(); //Draw the station sprite
 
 /*Text properties*/
-yOfTextRelativeToStation = 48
-xOfTextRelativeToStation = -20
+yOfTextRelativeToStation = 60
+xOfTextRelativeToStation = -10
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_font(fntSilkscreen);

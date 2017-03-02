@@ -27,16 +27,17 @@
             <kind>1</kind>
             <string>starSpawnTimer = 1; //Time between star spawns
 alarm[0] = starSpawnTimer; //Set the alarm equal to the timer
-starPointx = room_width; //Where on the screen the stars spawn relative to x
+starPointx = room_width+sprite_get_width(sprStar); //Where on the screen the stars spawn relative to x
 starPointy = random(room_height); //Where on the screen the stars spawn relative to y
-starMax = 200; //Max amount of stars appearing on screen
+starMax = 250; //Max amount of stars appearing on screen
+starSpeedMin = .12 //Min speed the stars will travel
 starSpeedMax = .5; //Max speed the stars will travel
-starSpeed = random(starSpeedMax); //Randomly generated speed value
+starSpeed = random_range(starSpeedMin,starSpeedMax); //Randomly generated speed value
 
 /*Spawn stars when the game starts*/
 for(starSpawnCount = 0; starSpawnCount &lt; starMax; starSpawnCount++){
     
-    starSpeed = random(starSpeedMax);
+    starSpeed = random_range(starSpeedMin,starSpeedMax);
     starInstance = instance_create(random(room_width),random(room_height), objStar);
 
 }
@@ -91,14 +92,14 @@ if instance_number(objStar) &lt; starMax{
           <argument>
             <kind>1</kind>
             <string>starPointy = random(room_height); //Generate a place on the screen for the star to spawn relative to y
-starSpeed = random(starSpeedMax); //Generate a speed
+starSpeed = random_range(starSpeedMin,starSpeedMax); //Generate a speed
 
 for (starId = 0; starId &lt; instance_count; starId += 1;) //Loop through each spawned star
     {
     if(instance_exists(instance_find(objStar,starId))){ //With the STAR object
         with (instance_find(objStar,starId)){ //Pick a star
             
-            move_towards_point( -sprite_get_width(sprStar), y, speed); //Travel towards the left of the screen
+            move_towards_point(-sprite_get_width(sprStar), y, speed); //Travel towards the left of the screen
             if(x&lt;-sprite_get_width(sprStar)){ //If the star is off the screen
                 instance_destroy(); //Destroy it
             }
