@@ -50,7 +50,7 @@
             <kind>1</kind>
             <string>draw_set_colour(c_white);
 draw_set_halign(fa_left);
-draw_set_font(fntTextBox);
+draw_set_font(fntSilkscreen);
 if(instance_exists(objGame)){
     draw_text(-200,12,"Turn: " + string(objGame.playerTurnCounter));
 }
