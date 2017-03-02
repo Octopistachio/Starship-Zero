@@ -1,3 +1,5 @@
+walkSpeed = 4;
+
 if(global.walking){ //If player is walking
 
     /*Walk to Door*/
@@ -8,13 +10,13 @@ if(global.walking){ //If player is walking
          global.didDoorsClose = 0; //checks if doors already closed and how far
     
         if(global.player[playerTurnCounter,1].x < objDoor.x) //If player's X is less than the X of the door
-            global.player[playerTurnCounter,1].x++; //Walk forwards
+            global.player[playerTurnCounter,1].x += walkSpeed; //Walk forwards
         else if(global.player[playerTurnCounter,1].x > objDoor.x){ //If player's X is greater than the X of the door
-            global.player[playerTurnCounter,1].x--; //Walk backwards
+            global.player[playerTurnCounter,1].x -= walkSpeed; //Walk backwards
             with(global.player[playerTurnCounter,1]){
-                image_xscale = -1;
+                image_xscale = -4;
                 if(x == objDoor.x) //Flip player when he is walking backwards
-                    image_xscale = 1;
+                    image_xscale = 4;
                     
             }
                         
@@ -25,7 +27,7 @@ if(global.walking){ //If player is walking
             global.sameLevel = true; //The player and the station ARE on the same level of the ship
             
             if(global.player[playerTurnCounter,1].x < global.station[selectedStationCounter,0].x)
-                global.player[playerTurnCounter,1].x++;
+                global.player[playerTurnCounter,1].x += walkSpeed;
             else
                 global.walking = false; 
         
@@ -43,13 +45,13 @@ if(global.walking){ //If player is walking
     if(global.player[playerTurnCounter,1].x != global.station[selectedStationCounter,0].x - 8 && global.sameLevel == true){ //If player's X is not equal to the station's X
         
         if(global.player[playerTurnCounter,1].x < global.station[selectedStationCounter,0].x - 8) //If player's X is less than the X of the station
-            global.player[playerTurnCounter,1].x++; //Walk forwards
+            global.player[playerTurnCounter,1].x += walkSpeed; //Walk forwards
         else{ //If player's X is greater than the X of the station
-            global.player[playerTurnCounter,1].x--; //Walk backwards
+            global.player[playerTurnCounter,1].x -= walkSpeed; //Walk backwards
             with(global.player[playerTurnCounter,1]){
-                image_xscale = -1;
+                image_xscale = -4;
                 if(x == global.station[objGame.selectedStationCounter,0].x - 8) //Flip player when he is walking backwards
-                    image_xscale = 1;
+                    image_xscale = 4;
                     
             }
         }

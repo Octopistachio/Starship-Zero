@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="8" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -30,7 +30,6 @@
 draw_self(); //Draw the station sprite
 
 /*Text properties*/
-fontScale = .25;
 yOfTextRelativeToStation = 12
 xOfTextRelativeToStation = -5
 draw_set_halign(fa_center);
@@ -51,7 +50,7 @@ draw_set_colour(self.currentColour);
 
 
 for(currentStationCounter=0;currentStationCounter&lt;array_height_2d(global.station);currentStationCounter++){
-    textAboveStation = draw_text_transformed(x-xOfTextRelativeToStation,y-yOfTextRelativeToStation,stationName,fontScale,fontScale,0);
+    textAboveStation = draw_text(x-xOfTextRelativeToStation,y-yOfTextRelativeToStation,stationName);
 }
 </string>
           </argument>

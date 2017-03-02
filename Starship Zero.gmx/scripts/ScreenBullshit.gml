@@ -4,7 +4,8 @@ window_set_fullscreen(true)
 
 //How big is the screen?
 ScreenHeight = display_get_height()
-ScreenWidth = ScreenHeight*(room_width/room_height)
+ScreenWidth = display_get_width()
+//ScreenWidth = ScreenHeight*(room_width/room_height)
 
 //Set size of window - you don't need to do this in full screen
 window_set_size(ScreenWidth,ScreenHeight)
