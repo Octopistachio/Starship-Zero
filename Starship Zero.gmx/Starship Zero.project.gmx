@@ -44,6 +44,9 @@
       </sprites>
     </sprites>
     <sprite>sprites\sprStar</sprite>
+    <sprites name="Portrait">
+      <sprite>sprites\sprPortrait1</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -61,6 +64,14 @@
     <font>fonts\fntTextBox</font>
   </fonts>
   <objects name="objects">
+    <objects name="Processes">
+      <object>objects\objGame</object>
+      <object>objects\objSelector</object>
+      <object>objects\objTextGame</object>
+      <object>objects\objOptions</object>
+      <object>objects\objDev</object>
+      <object>objects\objBackground</object>
+    </objects>
     <objects name="Players">
       <object>objects\objPlayer</object>
       <object>objects\objRed</object>
@@ -91,17 +102,12 @@
         <object>objects\objTurret</object>
       </objects>
     </objects>
-    <object>objects\objGame</object>
-    <object>objects\objBackground</object>
-    <object>objects\objSelector</object>
-    <object>objects\objDev</object>
-    <object>objects\objTextGame</object>
     <object>objects\objStar</object>
-    <object>objects\objOptions</object>
+    <object>objects\objPortrait</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\roomSpace</room>
     <room>rooms\roomText</room>
+    <room>rooms\roomSpace</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

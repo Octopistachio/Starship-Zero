@@ -49,6 +49,10 @@ characterDrawDelay = 2; //Delay between each character of the string
 chars_drawn=1;//put this to 0 if you want to draw the first character in the for loop
 alarm[0]=characterDrawDelay;//any value here this is the delay between each character drawn;
 
+instance_create(room_width/2,boxHeight+boxMargin,objPortrait); //Spawn the portrait in the center of the room
+objPortrait.image_xscale = 8;
+objPortrait.image_yscale = objPortrait.image_xscale;
+
 text = "How can my screen hesitate? An anniversary crowd antiques dance. The soundtrack disables this wealthy major outside the tutor. The eighth tail marries the cyclist opposite the handful."; //Text written to the textbox
 </string>
           </argument>
