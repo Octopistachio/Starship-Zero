@@ -9,21 +9,23 @@
     <sound>sound\audSong</sound>
   </sounds>
   <sprites name="sprites">
-    <sprites name="Red">
-      <sprite>sprites\sprRed</sprite>
-      <sprite>sprites\sprRedWalking</sprite>
-    </sprites>
-    <sprites name="Yellow">
-      <sprite>sprites\sprYellow</sprite>
-      <sprite>sprites\sprYellowWalking</sprite>
-    </sprites>
-    <sprites name="Blue">
-      <sprite>sprites\sprBlue</sprite>
-      <sprite>sprites\sprBlueWalking</sprite>
-    </sprites>
-    <sprites name="Green">
-      <sprite>sprites\sprGreen</sprite>
-      <sprite>sprites\sprGreenWalking</sprite>
+    <sprites name="Players">
+      <sprites name="Red">
+        <sprite>sprites\sprRed</sprite>
+        <sprite>sprites\sprRedWalking</sprite>
+      </sprites>
+      <sprites name="Yellow">
+        <sprite>sprites\sprYellow</sprite>
+        <sprite>sprites\sprYellowWalking</sprite>
+      </sprites>
+      <sprites name="Green">
+        <sprite>sprites\sprGreen</sprite>
+        <sprite>sprites\sprGreenWalking</sprite>
+      </sprites>
+      <sprites name="Blue">
+        <sprite>sprites\sprBlue</sprite>
+        <sprite>sprites\sprBlueWalking</sprite>
+      </sprites>
     </sprites>
     <sprites name="Ship">
       <sprites name="Interior">
@@ -43,10 +45,11 @@
         <sprite>sprites\sprFire</sprite>
       </sprites>
     </sprites>
-    <sprite>sprites\sprStar</sprite>
     <sprites name="Portrait">
       <sprite>sprites\sprPortrait1</sprite>
     </sprites>
+    <sprite>sprites\sprStar</sprite>
+    <sprite>sprites\sprButtonA</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
