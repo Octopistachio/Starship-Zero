@@ -83,6 +83,10 @@ selected = false; //A station has been selected. This variable stops the selecto
 stationHasBeenChosen = false; //When a station was picked, this changes to true
 
 global.sameLevel = true;
+
+global.distanceFromStation = 40;//How far from station the player stops
+global.didLevelChange = false;
+global.didDoorsClose = 0;
 </string>
           </argument>
         </arguments>
