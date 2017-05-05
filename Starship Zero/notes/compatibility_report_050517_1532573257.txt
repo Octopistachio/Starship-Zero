@@ -1,0 +1,37 @@
+Converting GML script : ${project_dir}\scripts\ScreenBullshit\ScreenBullshit.gml
+Converted builtin : line 14 : view_wview = ScreenWidth -> __view_set( e__VW.WView, 0, ScreenWidth )
+Converted builtin : line 15 : view_hview = ScreenHeight -> __view_set( e__VW.HView, 0, ScreenHeight )
+Converted builtin : line 18 : view_wport = ScreenWidth -> __view_set( e__VW.WPort, 0, ScreenWidth )
+Converted builtin : line 19 : view_hport = ScreenHeight -> __view_set( e__VW.HPort, 0, ScreenHeight )
+
+Converting GML script : ${project_dir}\scripts\ChangeTextColour\ChangeTextColour.gml
+Converted string : line 5 : 'E' -> "E"
+
+Font fntSilkscreen has been converted to font family Silkscreen (Normal). Font has been regenerated, small inconsistencies may occur.
+Converting GML script : ${project_dir}\objects\objGame\Step_0.gml
+Converted string : line 6 : 'D' -> "D"
+Converted string : line 28 : 'A' -> "A"
+Converted string : line 53 : 'E' -> "E"
+
+Converting GML script : ${project_dir}\objects\objGame\Draw_64.gml
+Converted builtin : line 9 : view_wview -> __view_get( e__VW.WView, 0 )
+Converted builtin : line 11 : view_wview -> __view_get( e__VW.WView, 0 )
+
+!!! Font fntTextBox uses a font (Roses are FF0000) not installed on this system. Font has NOT been regenerated.
+Converting GML script : ${project_dir}\objects\objDev\Draw_64.gml
+Converted string : line 8 : "Red's station: " -> "Red\'s station: "
+Converted string : line 10 : "Yellow's station: " -> "Yellow\'s station: "
+Converted string : line 12 : "Blue's station: " -> "Blue\'s station: "
+Converted string : line 14 : "Green's station: " -> "Green\'s station: "
+
+Font fntTitle has been converted to font family Silkscreen (Normal). Font has been regenerated, small inconsistencies may occur.
+macOS icon ${options_dir}\mac\icons\icon512.png written out as 32-bit.
+game speed set to 60
+added compatibility script instance/instance_create.gml
+added compatibility script object/object_get_depth.gml
+added compatibility script view/__view_get.gml
+added compatibility script view/__view_set.gml
+added compatibility script view/__view_set_internal.gml
+added compatibility script view/__init_view.gml
+added compatibility script __init_global.gml
+added compatibility script __global_object_depths.gml
